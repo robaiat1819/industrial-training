@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Web Layout Use Div</title>
+		<style>
+			.table-1{
+				width: 1000px;
+				height: 800px;
+				background-color: #30336b;
+			}
+			.table-1.table-1-one{
+				width: 500px;
+				height: 800px;
+				float: left;
+			}
+			.table-1 .table-1-two {
+				 width: 500px;
+				 height: 800px;
+				 float: left;
+			}
+			
+			.inner-table-1{
+				 width: 500px;
+				 height: 800px; 
+				 background-color: #7ed6df;
+				 float: left;
+			}
+			.inner-table-1 .inner-table-1-one{
+				width: 500px;
+				height: 400px;
+				background-color: #f9ca24 ;
+				float: left;
+			}
+			.inner-table-1 .inner-table-1-two{
+				width: 500px;
+				height:400px;
+				float: left;
+			}
+			.inner-table-2{
+				width: 500px;
+				height: 400px;
+				background-color: #535c68;
+				float: left;
+			}
+			.inner-table-2 .inner-table-2-one{
+				width: 250px;
+				height: 400px;
+				float: left;
+			}
+			.inner-table-2 .inner-table-2-two{
+				width: 250px;
+				height: 400px;
+				float: left;
+			}
+			#innertable3{
+				width: 250px;
+				height: 400px;
+				float: left;
+				background-color: aqua;
+			}
+			#innertable3 .innertable3-one{
+				width: 83.33px;
+				height: 400px;
+				float: left;
+				background-color: red;
+			}
+			#innertable3 .innertable3-two{
+				width: 83.33px;
+				height: 400px;
+				float: left;
+				background-color: green;
+			}
+			#innertable3 .innertable3-three{
+				width: 83.33px;
+				height: 400px;
+				float: left;
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div class="table-1">
+				
+					<div class="table-1-one"></div>
+					
+					<div class="table-1-two">
+						<!-- inner table1 start-->
+						<div class="inner-table-1">
+							
+								<div class="inner-table-1-one"></div>
+							
+							
+								<div class="inner-table-1-two">
+									<!-- inner table2 start-->
+									<div class="inner-table-2">
+										
+											<div class="inner-table-2-one"></div>
+											<div class="inner-table-2-two">
+												<!-- ineer table3 start -->
+												<div id="innertable3">
+														<div class="innertable3-one"></div>
+														<div class="innertable3-two"></div>
+														<div class="innertable3-three"></div>
+												</div>
+												<!-- ineer table3 end -->
+											</div>
+										
+									</div>
+									<!-- inner table2 end-->
+								</div>
+							
+						</div>	
+						<!-- inner table1 end-->
+					</div>
+				
+			</div>
+		</center>
+	</body>
+</html>
